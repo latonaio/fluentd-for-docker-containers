@@ -8,7 +8,7 @@ fluentd を動かすためには、 fluentd-for-docker-containers の他に、�
 
 * fluentd-core-kube  
 
-* fluentd-docker-mongodb-kube   
+* fluentd-for-containers-mongodb-kube 
 
 ## サンプル定義ファイル
 
