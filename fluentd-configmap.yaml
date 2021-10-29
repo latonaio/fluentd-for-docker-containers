@@ -1,0 +1,27 @@
+<source>
+  @type tail
+  path /var/log/containers/*.log
+  pos_file fugafuga.pos
+  tag example.*
+  time_format %Y-%m-%dT%H:%M:%S
+  format json
+  read_from_head true
+</source>
+
+<filter example.var.log.containers.**.log>
+  @type kubernetes_metadata
+  ca_file hogehoge
+  bearer_token_file fugafuga
+  skip_labels true
+  skip_container_metadata true
+  skip_master_url true
+  skip_namespace_metadata true
+</filter>
+
+<match kubernetes.**>
+  @type rewrite_tag_filter
+  <rule>
+    hogehoge
+    tag rewrite.*
+  </rule>
+</match>
