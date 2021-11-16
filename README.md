@@ -3,11 +3,10 @@
 fluentd-for-docker-containers は、Docker コンテナ（Kubernetesの対象Pod）のログを収集するためのリソースです。  
 fluentd を動かすためには、 fluentd-for-docker-containers の他に、下記のようなレポジトリを参照して、設定を行う必要があります。  
 
-* fluentd-for-mongodb
-
-* fluentd-core-kube  
-
-* fluentd-for-containers-mongodb-kube 
+* fluentd-for-mongodb  
+* fluentd-core-kube   
+* fluentd-for-containers-mongodb-kube  
+* fluentd-for-avis
 
 ## 動作環境
 fluentd-for-docker-containers は、以下の動作環境を前提としています。  
